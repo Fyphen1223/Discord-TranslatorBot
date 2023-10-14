@@ -3,7 +3,7 @@ const discord = require('discord.js');
 const fs = require('fs');
 const translate = require('google-translate-api-x');
 var queue = require('./queue.json');
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, PermissionsBitField } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const client = new discord.Client({
     intents: [
         discord.GatewayIntentBits.GuildEmojisAndStickers,
