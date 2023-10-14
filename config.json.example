@@ -1,0 +1,6 @@
+{
+    "bot": {
+        "token": "Bot token",
+        "applicationId": "App ID"
+    }
+}
