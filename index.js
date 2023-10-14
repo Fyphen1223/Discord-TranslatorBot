@@ -103,7 +103,7 @@ client.on('messageCreate', async (message) => {
             iconURL: `${message.author.avatarURL({})}`,
         });
     for (const target of queue[channelId].target) {
-        const res = await translate(message.content, { to: target })
+        const res = await translate(message.content, { to: target, forceTo: true, from: "auto" })
         embed.addFields({ name: `To ${target}`, value: res.text, inline: true });
     }
     await message.reply({ embeds: [embed] });
